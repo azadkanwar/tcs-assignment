@@ -1,0 +1,8 @@
+<div class="card-body">
+  <div class="user-name">{{user.name.last}}, {{user.name.first}}</div>
+  <div class="user-body">
+    <img [src]="user.picture.thumbnail" alt="pic" />
+    <div class="mr-l-20">{{user.email}}</div>
+  </div>
+  <div class="mr-t-20">Registered {{user.registered.date | timeAgo}}</div>
+</div>

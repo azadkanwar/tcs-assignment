@@ -1,0 +1,8 @@
+<h1>Search users By Name</h1>
+<input type="sarch" class="search-users" [(ngModel)]="searchText" placeholder="search name">
+<div *ngFor="let user of userList | sortName : searchText">
+  <app-card [user]="user"></app-card>
+</div>
+<div class="txt-center">
+  <button type="button" class="btn" (click)="loadMoreUsers()">Load more users</button>
+</div>
